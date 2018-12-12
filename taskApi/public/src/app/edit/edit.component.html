@@ -1,0 +1,14 @@
+
+<form (submit)="sendEdit(taskToBeEdit)">
+    <p>{{ taskToBeEdit.title }}</p>
+    <input type="text" name="editTask.WHAT" [(ngModel)]='editTask.WHAT' placeholder="{{taskToBeEdit.title}}" />
+    <p>{{ taskToBeEdit.description }}</p>
+    <input type="text" name="editTask.description" [(ngModel)]="editTask.description" placeholder="{{ taskToBeEdit.description}}" />
+    <input type="submit" value="Edit" />
+</form>
+<!-- <form (submit)="edit(task._id)">
+    <input type="text" name="newTask.title" [(ngModel)]='editTask.title' placeholder="{{task.title}}" />
+    <input type="text" name="editTask.description" [(ngModel)]="editTask.description" placeholder="{{ task.description}}" />
+    <input type="submit" value="Edit" />
+</form> -->
+
